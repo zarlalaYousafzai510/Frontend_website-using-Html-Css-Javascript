@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Best Practices</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">WebDev</h2>
+
+            <button id="menuBtn" aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
+
+            <ul id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Build Better Websites</h1>
+            <p>Create responsive, interactive, and user-friendly websites.</p>
+            <a href="#features" class="btn">Explore Features</a>
+        </section>
+
+        <section id="features" class="section">
+            <h2>Our Features</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Responsive Design</h3>
+                    <p>Websites that adapt to different screen sizes.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Smooth Animations</h3>
+                    <p>Transitions that improve the user experience.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Interactive Content</h3>
+                    <p>Dynamic content that responds to user actions.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="services" class="section services">
+            <h2>Our Services</h2>
+            <p id="serviceText">Click the button to explore our services.</p>
+            <button id="serviceBtn" class="btn">Show Service</button>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+
+            <form id="contactForm" novalidate>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+
+                <p id="formMessage" role="status"></p>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Frontend Development Best Practices</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
